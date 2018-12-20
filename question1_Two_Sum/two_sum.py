@@ -18,7 +18,14 @@ class Solution:
  
 '''Testcase'''
 '''Testcase1_normalCase'''
+print("Testcase1")
 nums1 = [2, 5, 5, 4, 6, 3, 1, 2, 34, 1, 2]
 target1 = 10
 case1 = Solution()
 case1.twoSum(nums1, target1)
+print("Testcase2")
+'''Testcase2_nontargetCase'''
+nums2 = [2, 5, 5, 2]
+target2 = 6
+case2 = Solution()
+case2.twoSum(nums2, target2)
