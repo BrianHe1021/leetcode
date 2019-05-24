@@ -1,3 +1,5 @@
+package question2_Add_Two_Number.java;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -7,7 +9,7 @@
  * }
  */
 class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
         ListNode node = dummy;
         int carry = 0;
@@ -22,5 +24,13 @@ class Solution {
         	l2 = l2 != null ? l2.next : null;
         }
         return dummy.next;
+    }
+    public static void main(String[] args) {
+    	int[] num1 = {2, 4, 3};
+    	int[] num2 = {5, 6, 4};
+    	ListNode a = ListNode.constructLinkedList(num1);
+    	ListNode b = ListNode.constructLinkedList(num2);
+    	ListNode result = addTwoNumbers(a, b);
+    	System.out.println(result.tolist());
     }
 }
